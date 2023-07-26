@@ -1,5 +1,22 @@
 import "bootstrap/dist/css/bootstrap.css";
+import '@/css/homepage.css';
+import '@/css/utilities.css';
+import '@/css/detail.css';
+import '@/css/checkout.css';
+import '@/css/complete-checkout.css';
+import '@/css/sign-in.css';
+import '@/css/sign-up.css';
+import '@/css/sign-up-photo.css';
+import '@/css/sign-up-success.css';
+import '@/css/404-not-found.css';
+import '@/css/overview.css';
+import '@/css/sidebar.css';
+import '@/css/transactions.css';
+import '@/css/transactions-detail.css';
+import '@/css/edit-profile.css';
+
 import type { Metadata } from "next";
+import AOSInitializer from "@/helpers/AOSInitializer";
 
 // import { Inter } from 'next/font/google'
 // const inter = Inter({ subsets: ['latin'] })
@@ -44,16 +61,11 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
 
-        {/* <!-- AOS Animation --> */}
-        <link
-          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-          rel="stylesheet"
-        />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       </head>
 
       <body>{children}</body>
       {/* <body className={inter.className}>{children}</body> */}
+      <AOSInitializer/>
     </html>
   );
 }
