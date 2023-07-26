@@ -14,6 +14,7 @@ import '@/css/sidebar.css';
 import '@/css/transactions.css';
 import '@/css/transactions-detail.css';
 import '@/css/edit-profile.css';
+import '@/css/navbar-log-in.css';
 
 import type { Metadata } from "next";
 import AOSInitializer from "@/helpers/AOSInitializer";
