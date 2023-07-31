@@ -2,24 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface GameItemProps {
-  thumbnails:
-    | "Thumbnail-1"
-    | "Thumbnail-2"
-    | "Thumbnail-3"
-    | "Thumbnail-4"
-    | "Thumbnail-5";
+  img:
+    | "/assets/img/Thumbnail-1.png"
+    | "/assets/img/Thumbnail-2.png"
+    | "/assets/img/Thumbnail-3.png"
+    | "/assets/img/Thumbnail-4.png"
+    | "/assets/img/Thumbnail-5.png";
   titleGame: string;
   category: "Mobile" | "Desktop";
 }
 export default function GameItem(props: GameItemProps) {
-  const { thumbnails, titleGame, category } = props;
+  const { img, titleGame, category } = props;
   return (
     <div className="featured-game-card position-relative">
       <Link href="/detail">
         <div className="blur-sharp">
           <Image
             className="thumbnail"
-            src={`/assets/img/${thumbnails}.png`}
+            src={img}
             width={205}
             height={270}
             alt="Image game"
