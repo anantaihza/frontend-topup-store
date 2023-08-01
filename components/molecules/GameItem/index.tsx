@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface GameItemProps {
+export interface GameItemProps {
   img:
     | "/assets/img/Thumbnail-1.png"
     | "/assets/img/Thumbnail-2.png"
